@@ -4,6 +4,7 @@ NotesScreen {
 
 #dunce-notes-tree {
     width: 1fr;
+    min-width: 20;
     height: 100%;
     overflow-y: auto;
 }
