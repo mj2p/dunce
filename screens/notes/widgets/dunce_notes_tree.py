@@ -64,6 +64,9 @@ class DunceNotesTree(Vertical):
 
         for root, dirs, files in os.walk(NOTES_DIR):
             for file in files:
+                if ".git" in root:
+                    continue
+
                 search_data.append(f"{Path(root, file).read_text()}|||{Path(root, file)}")
 
         results = process.extract(search_term, search_data)
