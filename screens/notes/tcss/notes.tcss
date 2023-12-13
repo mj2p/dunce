@@ -1,0 +1,92 @@
+NotesScreen {
+    layout: horizontal;
+}
+
+#dunce-notes-tree {
+    width: 1fr;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#dunce-notes {
+    width: 7fr;
+    height: 100%;
+}
+
+#dunce-notes-title {
+    text-align: center;
+    margin: 1 0 1 0;
+    border: solid darkolivegreen;
+    width: 100%;
+}
+
+#dunce-note-container {
+    border-top: solid white;
+}
+
+#dunce-markdown {
+    overflow-y: auto;
+}
+
+#dunce-input {
+    height: 10;
+    dock: bottom;
+    margin: 1;
+    overflow-y: auto;
+    border: hkey white;
+}
+
+#dunce-text-area {
+    margin: 1;
+}
+
+#dunce-create, #dunce-edit-save {
+    height: 100%;
+
+    margin: 1;
+    box_sizing: border-box;
+}
+
+#dunce-edit-save {
+    display: none;
+}
+
+#dunce-tree {
+    margin: 1;
+}
+
+#dunce-search-input {
+    margin: 1;
+}
+
+DunceNote {
+    border-bottom: dashed dimgrey;
+    margin: 0 0 1 0;
+    padding: 0 0 1 0;
+    height: 15;
+}
+
+.dunce-note-container {
+    width: 5fr;
+}
+.dunce-note-buttons {
+    height: auto;
+    width: auto;
+    margin: 0 2;
+    align: right middle;
+}
+
+.dunce-note-view, .dunce-note-edit, .dunce-note-delete {
+    margin: 0 0 1 0;
+    height: 3;
+}
+
+.dunce-note-label {
+    width: 100%;
+    padding: 0 0 1 0;
+    text-align: center;
+}
+
+#dunce-20231212092904 {
+    border: solid green;
+}
