@@ -5,12 +5,11 @@ from typing import Optional
 
 from git import Repo
 from textual.app import ComposeResult
-from textual.binding import Binding
 from textual.containers import Vertical
 from textual.screen import Screen
 from textual.widgets import Footer, Header
 
-from utils import NOTES_DIR
+from dunce.utils import NOTES_DIR
 
 from .widgets.dunce_input import DunceInput
 from .widgets.dunce_markdown_viewer import DunceMarkdownViewer, DunceNote
@@ -19,8 +18,6 @@ from .widgets.dunce_notes_tree import DunceNotesTree
 
 class NotesScreen(Screen):
     CSS_PATH = "tcss/notes.tcss"
-
-    BINDINGS = [Binding("ctrl+u", "undo", "Undo")]
 
     async def action_undo(self) -> None:
         if not hasattr(self, "repo"):

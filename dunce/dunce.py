@@ -1,8 +1,8 @@
 from textual.app import App
 
-from screens.notes.notes_screen import NotesScreen
-from screens.notes.view_note_modal import ViewNote
-from screens.notes.widgets.dunce_markdown_viewer import DunceNote
+from .screens.notes.notes_screen import NotesScreen
+from .screens.notes.view_note_modal import ViewNote
+from .screens.notes.widgets.dunce_markdown_viewer import DunceNote
 
 
 class DunceApp(App):
@@ -21,6 +21,6 @@ class DunceApp(App):
         view_note_screen.view_note.update(note_path.read_text())
 
 
-if __name__ == "__main__":
+def dunce():
     app = DunceApp()
     app.run()

@@ -11,7 +11,7 @@ from textual.widgets import Input, Tree
 from textual.widgets._tree import TreeNode
 from thefuzz import process
 
-from utils import NOTES_DIR
+from dunce.utils import NOTES_DIR
 
 
 class DunceNotesTree(Vertical):
