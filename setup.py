@@ -25,4 +25,5 @@ setup(
         "test": ["pytest", "textual-dev", "black", "flake8", "isort", "pytest-cov", "pytest-mocha", "pytest-mock"],
     },
     entry_points={"console_scripts": ["dunce = dunce.dunce:dunce"]},
+    include_package_data=True,
 )
