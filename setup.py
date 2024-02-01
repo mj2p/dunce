@@ -19,7 +19,7 @@ setup(
     url="https://github.com/mj2p/dunce.git",
     author="MJ2P",
     packages=find_packages(exclude=["tests"]),
-    install_requires=["textual[syntax]==0.46.0", "thefuzz==0.20.0", "gitpython==3.1.40", "xdg-base-dirs==6.0.1"],
+    install_requires=["textual[syntax]==0.48.0", "thefuzz==0.20.0", "gitpython==3.1.40", "xdg-base-dirs==6.0.1"],
     extras_require={
         "dev": ["pre-commit==3.6.0"],
         "test": ["pytest", "textual-dev", "black", "flake8", "isort", "pytest-cov", "pytest-mocha", "pytest-mock"],
